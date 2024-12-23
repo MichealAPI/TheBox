@@ -1,0 +1,32 @@
+
+.idea {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.idea .description .section-title p {
+    color: rgba(var(--secondary), .7);
+    font-size: 16px;
+
+    margin-bottom: 8px;
+    margin-top: 20px;
+}
+
+.idea .description .content p {
+    color: rgba(var(--secondary), .8);
+    font-size: 16px;
+
+    margin: 0;
+
+    padding-bottom: 19px;
+
+    border-bottom: 1px solid rgba(var(--secondary), .2);
+}
+
+/** Mobile **/
+@media (max-width: 768px) {
+    .idea {
+        width: calc(100% - 20px);
+    }
+}
