@@ -1,0 +1,59 @@
+.navbar-header p {
+    margin: 0;
+    font-size: 24px;
+    color: rgba(var(--secondary));
+}
+
+.custom-navbar-toggler button {
+    background-color: transparent;
+    border: 2px solid rgba(var(--secondary), .8);
+    outline: none;
+    cursor: pointer;
+
+    border-radius: 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 40px;
+    height: 40px;
+
+}
+
+.custom-navbar-toggler button .icon i {
+    font-size: 30px;
+    color: rgba(var(--secondary));
+}
+
+.bg-navbar {
+    background-color: var(--light-gray);
+    border-bottom: 1px solid var(--dark-gray);
+}
+
+
+.navbar-content {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    row-gap: 10px;
+}
+
+.navbar-element a {
+    text-decoration: none;
+    color: rgba(var(--secondary));
+    font-size: 24px;
+}
+
+.navbar-content .general-divider p {
+    color: rgba(var(--secondary), .7);
+    font-size: 18px;
+    margin: 0;
+
+    margin-top: 10px;
+}
+
