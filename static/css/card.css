@@ -135,7 +135,7 @@
     transition: .3s;
 }
 
-.card-wrapper .item .content .footer .anchor a {
+.card-wrapper .item .content .footer .anchor a img {
     width: 32px;
     height: 32px;
 }

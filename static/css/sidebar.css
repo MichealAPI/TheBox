@@ -28,8 +28,8 @@
 }
 
 .sidebar .wrapper .sidebar-header .logo img {
-    max-width: 40px;
-    max-height: 40px;
+    width: 40px;
+    height: fit-content;
 
     user-select: none;
     
