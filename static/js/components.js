@@ -1,10 +1,10 @@
-
-const componentsDir = '/static/components';
+const baseURL = window.location.origin + window.location.pathname.replace(/\/[^/]*$/, '');
+const componentsDir = `${baseURL}/static/components`;
 
 function includeHTML(component, elementId) {
     fetch(`${componentsDir}/${component}.html`)
         .then(response => {
-            if (!response.ok) throw new Error(`Failed to load ${file}`);
+            if (!response.ok) throw new Error(`Failed to load ${component}`);
             return response.text();
         })
         .then(html => {
