@@ -1,0 +1,6 @@
+.logo img { /* TODO: This is the selector that we want to use */
+    width: 40px;
+    height: fit-content;
+
+    user-select: none;
+}

@@ -1,0 +1,46 @@
+.general-btn button {
+    border: none;
+    outline: none;
+    transition: .1s;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    column-gap: 4px;
+}
+
+.general-btn button:hover {
+    filter: brightness(70%);
+    transition-property: filter;
+    transition-duration: .3s;
+}
+
+.general-btn button:active {
+    scale: 1.01;
+    transition-property: scale;
+    transition-duration: .1s;
+}
+
+.general-btn.secondary button {
+    color: var(--primary);
+    background-color: rgba(var(--secondary));
+}
+
+.general-btn.auth-btn button {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 10px;
+
+    margin-top: 50px;
+    margin-bottom: 18px;
+}
+
+.general-btn.auth-btn button .text p,
+.general-btn.auth-btn button .icon i {
+    font-size: 18px;
+}
+
+.general-btn button .text p {
+    margin: 0;
+}

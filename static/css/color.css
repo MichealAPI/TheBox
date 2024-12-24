@@ -12,3 +12,15 @@
     --blue: #408dd4;
     --black: #000; 
 }
+
+.gray-color {
+    color: var(--gray);
+}
+
+.secondary-color {
+    color: rgba(var(--secondary));
+}
+
+.animated.secondary-color:hover {
+    color: rgba(var(--secondary), .8);
+}
