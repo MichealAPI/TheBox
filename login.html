@@ -62,8 +62,9 @@
                         </div>
 
 
-                        <div class="d-flex flex-column w-100 input-gap">
-
+                        <!-- Form Start -->
+                        <form action="/login" method="POST" class="d-flex flex-column w-100 input-gap">
+                            
                             <!-- Email input -->
                             <div class="input-wrapper">
                                 <div class="input-header">
@@ -76,11 +77,10 @@
                                     </div>  
 
                                     <div class="input">
-                                        <input type="email" id="email" aria-describedby="email">
-                                    </div>                              
+                                        <input type="email" id="email" name="email" required aria-describedby="email" placeholder="Enter your email">
+                                    </div>                               
                                 </div>
                             </div>
-
 
                             <!-- Password input -->
                             <div class="input-wrapper">
@@ -99,29 +99,35 @@
                                     </div>  
 
                                     <div class="input">
-                                        <input type="password" id="password" aria-describedby="password">
-                                    </div>                              
+                                        <input type="password" id="password" name="password" required aria-describedby="password" placeholder="Enter your password">
+                                    </div>        
+
+                                    <div class="icon">
+                                        <!-- Toggle password visibility -->
+                                        <button type="button" class="btn toggle-password outline-transparent">
+                                            <i class="bi bi-eye toggle-password-icon"></i>
+                                        </button>
+                                    </div>                       
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="general-btn auth-btn secondary w-100">
-                            <button type="button" class="w-100">
+                            <!-- Submit Button -->
+                            <div class="general-btn auth-btn secondary w-100">
+                                <button type="submit" class="w-100">
+                                    <div class="text">
+                                        <p class="phantom-bold">Sign In</p>
+                                    </div>
+                                    <div class="icon">
+                                        <i class="bi bi-arrow-right"></i>
+                                    </div>
+                                </button>
+                            </div>
 
-                                <div class="text">
-                                    <p class="phantom-bold">Sign In</p>
-                                </div>
-
-                                <div class="icon">
-                                    <i class="bi bi-arrow-right"></i>
-                                </div>
-
-                            </button>
-                        </div>
-
+                        </form>
+                        <!-- Form End -->
                         <!-- Register prompt -->
                         <div class="register-prompt">
-                            <p class="phantom-regular">Don't have an account? <a href="#" class="phantom-bold">Sign up</a></p>
+                            <p class="phantom-regular">Don't have an account? <a href="/register.html" class="phantom-bold">Sign up</a></p>
                         </div>
                     </div>
 
@@ -142,6 +148,8 @@
         
 
     </div>
+
+    <script defer src="static/js/input.js"></script>
 
 </body>
 </html>

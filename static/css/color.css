@@ -17,6 +17,22 @@
     color: var(--gray);
 }
 
+.warning-color {
+    color: red;
+}
+
+.bg-gray {
+    background: var(--gray);
+}
+
+.border-secondary {
+    border: 1px solid rgba(var(--secondary), .2);
+}
+
+.border-red {
+    border: 1px solid var(--red);
+}
+
 .secondary-color {
     color: rgba(var(--secondary));
 }
