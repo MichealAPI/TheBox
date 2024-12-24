@@ -1,5 +1,5 @@
 
-const componentsDir = '/static/components';
+const componentsDir = '../components';
 
 function includeHTML(component, elementId) {
     fetch(`${componentsDir}/${component}.html`)
