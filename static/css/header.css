@@ -32,3 +32,11 @@
     color: rgba(var(--secondary), .8);
     margin: 0;
 }
+
+/* Mobile */
+@media
+    (max-width: 768px) {
+    .auth-wrapper .auth-header {
+        margin-top: 20px;
+    }
+}
