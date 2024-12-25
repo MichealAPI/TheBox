@@ -25,6 +25,14 @@
     background: var(--gray);
 }
 
+.border-primary {
+    border: 1px solid var(--primary);
+}
+
+.border-primary-2 {
+    border: 2px solid var(--primary);
+}
+
 .border-secondary {
     border: 1px solid rgba(var(--secondary), .2);
 }
@@ -37,6 +45,30 @@
     color: rgba(var(--secondary));
 }
 
+.primary-color {
+    color: var(--primary);
+}
+
 .animated.secondary-color:hover {
     color: rgba(var(--secondary), .8);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .secondary-sm-background {
+        background: rgba(var(--secondary));
+    }
+
+    .primary-sm-background {
+        background: var(--primary);
+    }
+
+    .secondary-sm-color {
+        color: rgba(var(--secondary));
+    }
+
+    .primary-sm-color {
+        color: var(--primary);
+    }
 }

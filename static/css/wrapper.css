@@ -12,6 +12,22 @@
     width: 470px;
 }
 
+.landing-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    margin-top: auto;
+    margin-bottom: auto;
+
+    width: 600px;
+
+    row-gap: 40px;
+}
+
 /* mobile */
 @media
     (max-width: 768px) {

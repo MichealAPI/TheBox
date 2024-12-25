@@ -1,0 +1,20 @@
+.landing-background {
+    background-image: url(../images/landing-background.png);
+    /* Full height */
+    min-height: 100vh;
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+
+    background-size: cover;
+}
+
+/* Mobile */
+@media
+    (max-width: 768px) {
+    .landing-background {
+        background-image: none;
+        background-color: #395862;
+    }
+}
