@@ -21,8 +21,16 @@
     color: red;
 }
 
+.bg-red {
+    background: var(--red);
+}
+
 .bg-gray {
     background: var(--gray);
+}
+
+.bg-green {
+    background: var(--green);
 }
 
 .border-primary {

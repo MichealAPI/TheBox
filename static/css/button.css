@@ -22,6 +22,11 @@
     transition-duration: .1s;
 }
 
+button.toolbar-btn {
+    width: 60px;
+    height: 60px;
+}
+
 .general-btn.secondary button {
     color: var(--primary);
     background-color: rgba(var(--secondary));

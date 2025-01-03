@@ -31,10 +31,19 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-12">
-                            <div class="page-header">
-                                <p class="phantom-bold">
+                            <div class="page-header d-flex align-items-center mt-4 mb-4 gap-4">
+                                <p class="phantom-bold m-0 header">
                                     Your Class
                                 </p>
+
+                                <div class="d-none d-md-block general-btn">
+                                    <button type="button" class="bg-primary rounded outline-transparent" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        <div class="d-flex justify-content-between align-items-center p-1 pe-2 ps-2">
+                                            <p class="phantom-regular primary-color m-0 ps-2">Course</p>
+                                            <i class="bi bi-plus m-0 fs-3 primary-color ps-1"></i>
+                                        </div>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -150,6 +159,43 @@
 
         </div>
 
+    </div>
+
+    <div class="position-fixed d-md-none d-block bottom-0 end-0 p-3">
+        <button type="button" class="rounded-circle toolbar-btn bg-primary outline-transparent" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <i class="bi bi-plus fs-1"></i>
+        </button>
+    </div>
+    
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title phantom-medium" id="exampleModalLabel">New Course</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            <form>
+                <div class="mb-3">
+                <label for="course-name" class="col-form-label phantom-medium">Name:</label>
+                <input type="text" class="form-control" id="recipient-name">
+                </div>
+                <div class="mb-3">
+                <label for="course-description" class="col-form-label phantom-medium">Description:</label>
+                <textarea class="form-control" id="message-text"></textarea>
+                </div>
+            </form>
+            </div>
+            <div class="modal-footer">
+            <div class="general-btn">
+                <button type="button" class="rounded bg-red pt-2 pb-2 ps-3 pe-3 phantom-medium" data-bs-dismiss="modal">Close</button>
+            </div>
+            <div class="general-btn">
+                <button type="button" class="rounded bg-green pt-2 pb-2 ps-3 pe-3 phantom-medium" data-bs-dismiss="modal">Create</button>
+            </div>
+            </div>
+        </div>
+        </div>
     </div>
 
     <script src="static/js/components.js"></script>
