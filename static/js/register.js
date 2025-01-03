@@ -126,9 +126,10 @@ function injectSection(sectionId, transitionDuration = defaultTransitionDuration
 
         inputGroup.style.opacity = 1;
 
-        if (transitionDuration === 0) { // Initial load
-            addPasswordToggleListeners();
-        }
+        //if (transitionDuration === 0) { // Initial load
+        //    addPasswordToggleListeners();
+        //}
+        addPasswordToggleListeners();
 
     }, transitionDuration);
 }

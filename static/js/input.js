@@ -20,6 +20,3 @@ function addPasswordToggleListeners() {
         });
     });
 }
-
-// Initialize password toggle listeners
-addPasswordToggleListeners();
