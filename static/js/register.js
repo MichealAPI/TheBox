@@ -190,13 +190,13 @@ function prevSection(e) {
     const currentSection = sections.find(sec => sec.id === `${state.currentSection}`);
     storeData(currentSection);
 
+    if (state.currentSection === sections.length) {
+        toggleSubmitButton();
+    }
+
     if (state.currentSection > 1) {
         state.currentSection -= 1;
         injectSection(state.currentSection);
-    }
-
-    if (state.currentSection < sections.length) {
-        toggleSubmitButton();
     }
 }
 
