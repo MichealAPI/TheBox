@@ -49,6 +49,14 @@
     color: var(--primary);
 }
 
+.red-color {
+    color: var(--red);
+}
+
+.green-color {
+    color: var(--green);
+}
+
 .animated.secondary-color:hover {
     color: rgba(var(--secondary), .8);
 }
