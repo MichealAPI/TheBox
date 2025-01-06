@@ -85,6 +85,12 @@
     column-gap: 14px;
 }
 
+.banner .actions-wrapper.senders {
+    margin-left: none;
+    justify-content: space-between;
+    column-gap: normal;
+}
+
 .banner .actions-wrapper .anchor {
     -moz-window-dragging: no-drag;
     cursor: pointer;

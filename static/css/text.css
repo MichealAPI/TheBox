@@ -1,0 +1,26 @@
+.fs-small {
+    font-size: 12px;
+}
+
+.fs-medium {
+    font-size: 18px;
+}
+
+.fs-large {
+    font-size: 24px;
+}
+
+.max-width-200 p {
+    max-width: 200px;
+    text-wrap: wrap;
+}
+
+.max-width-400 p {
+    max-width: 400px;
+    text-wrap: wrap;
+}
+
+.max-width-600 p {
+    max-width: 600px;
+    text-wrap: wrap;
+}

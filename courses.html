@@ -26,9 +26,9 @@
 
         <div class="row">
 
-            <div class="page-content-wrapper">
-                            <div class="col-md">
-                <div class="container-fluid">
+            <div class="page-content-wrapper min-vh-100">
+            <div class="col-md h-100">
+                <div class="container-fluid h-100 d-flex flex-column">
                     <div class="row">
                         <div class="col-md-12">
                             <div class="page-header d-flex align-items-center mt-4 mb-4 gap-4">
@@ -48,11 +48,24 @@
                         </div>
                     </div>
 
-                    <div class="row">
+                    <div class="row flex-grow-1">
                         <div class="col-md-12">
-                            <div class="card-wrapper">
 
-                                <div class="item classroom-card">
+                            <div class="empty">
+
+                                <div class="icon">
+                                    <img draggable="false" src="static/images/empty.png" alt="empty">
+                                </div>
+
+                                <div class="title">
+                                    <p class="phantom-regular secondary-color">No Courses Yet</p>
+                                </div>
+
+                            </div>
+
+                            <div class="card-wrapper d-none"> <!-- todo: remove d-none -->
+
+                                <div class="item classroom-card d-none"> <!-- todo: remove d-none -->
                                     <div class="content">
                                         <div class="header">
                                             <h1 class="phantom-bold">Your Course Name</h1>
@@ -94,7 +107,7 @@
                                 </div>
 
 
-                                <div class="item comment-card">
+                                <div class="item comment-card d-none"> <!-- todo: remove d-none -->
                                     <div class="content">
                                         <div class="header">
                                             <h1 class="phantom-bold">Your Name</h1>
